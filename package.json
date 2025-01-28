@@ -1,0 +1,14 @@
+{
+  "name": "im-personal-site",
+  "version": "1.0.0",
+  "description": "ImpendingMoon's Personal Site",
+  "main": "index.js",
+  "scripts": {
+    "run": "http-server src"
+  },
+  "author": "ImpendingMoon",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

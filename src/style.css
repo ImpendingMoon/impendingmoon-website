@@ -1,0 +1,63 @@
+html {
+    color: #222;
+    font-size: 1.25em;
+    line-height: 1.4;
+    font-family: sans-serif;
+    background-color: darkblue;
+}
+
+body * {
+    padding: 0 0.25em;
+}
+
+/* Grid stuff */
+
+@media (max-width: 1000px) {
+    #page {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer";
+        grid-gap: 0.5em;
+
+        margin: auto;
+    }
+}
+
+@media (min-width: 1001px) {
+    #page {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+        grid-gap: 0.5em;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 100vh auto;
+
+        max-width: 2048px;
+        margin: auto;
+    }
+}
+
+#page > header {
+    grid-area: header;
+    background-color: red;
+}
+
+#page > aside {
+    grid-area: aside;
+    background-color: purple;
+}
+
+#page > main {
+    grid-area: main;
+    background-color: lightblue;
+}
+
+#page > footer {
+    grid-area: footer;
+    background-color: red;
+}
