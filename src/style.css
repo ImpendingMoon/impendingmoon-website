@@ -1,16 +1,40 @@
 html {
-    color: #222;
+    color: #221133;
     font-size: 1.25em;
     line-height: 1.4;
     font-family: sans-serif;
     background-color: darkblue;
 }
 
-body * {
-    padding: 0 0.25em;
+header, main, aside, footer {
+    padding: 0 0.5em;
 }
 
-/* Grid stuff */
+h1 {
+    font-size: 2em;
+    margin: 0.25em 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    filter: brightness(200%);
+}
+
+.navbar > ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navbar-item {
+    display: inline;
+}
+
+/* Basic reactive layout using CSS grid */
 
 @media (max-width: 1000px) {
     #page {
@@ -35,7 +59,7 @@ body * {
         "footer footer";
         grid-gap: 0.5em;
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: auto 100vh auto;
+        grid-template-rows: 10vh 90vh auto;
 
         max-width: 2048px;
         margin: auto;
@@ -44,20 +68,25 @@ body * {
 
 #page > header {
     grid-area: header;
-    background-color: red;
+    background-color: ivory;
 }
 
 #page > aside {
     grid-area: aside;
-    background-color: purple;
+    background-color: ivory;
 }
 
 #page > main {
     grid-area: main;
-    background-color: lightblue;
+    background-color: ivory;
 }
 
 #page > footer {
     grid-area: footer;
-    background-color: red;
+    background-color: #222244;
+    color: #EEEEEE;
+}
+
+.fill-screen {
+    min-height: 100vh;
 }
