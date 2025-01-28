@@ -1,9 +1,22 @@
+:root {
+    --border-radius: 0.5em;
+    --black: #221133;
+    --white: #eeeeee;
+    --background-color: ivory;
+    --brighten-value: 150%;
+}
+
 html {
-    color: #221133;
+    color: var(--black);
     font-size: 1.25em;
     line-height: 1.4;
     font-family: sans-serif;
     background-color: darkblue;
+}
+
+body {
+    padding: 0;
+    margin: 0;
 }
 
 header, main, aside, footer {
@@ -22,16 +35,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    filter: brightness(200%);
-}
-
-.navbar > ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.navbar-item {
-    display: inline;
+    filter: brightness(var(--brighten-value));
 }
 
 /* Basic reactive layout using CSS grid */
@@ -59,7 +63,7 @@ a:hover {
         "footer footer";
         grid-gap: 0.5em;
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: 10vh 90vh auto;
+        grid-template-rows: auto 90vh auto;
 
         max-width: 2048px;
         margin: auto;
@@ -68,25 +72,63 @@ a:hover {
 
 #page > header {
     grid-area: header;
-    background-color: ivory;
+    background-color: var(--background-color);
 }
 
 #page > aside {
     grid-area: aside;
-    background-color: ivory;
+    background-color: var(--background-color);
 }
 
 #page > main {
     grid-area: main;
-    background-color: ivory;
+    background-color: var(--background-color);
 }
 
 #page > footer {
     grid-area: footer;
-    background-color: #222244;
-    color: #EEEEEE;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .fill-screen {
     min-height: 100vh;
+}
+
+/* Navigation stuff, not currently mobile-friendly */
+.navbar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navbar-item {
+    position: relative;
+    display: inline;
+}
+
+.navbar-item a {
+    font-size: 1.5em;
+    margin: 0 0.25em;
+}
+
+/* Submenus */
+.navbar-item > ul {
+    display: none;
+    background-color: var(--black);
+    color: var(--white);
+    position: absolute;
+    top: 110%;
+    left: 0;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.navbar-item .navbar-item {
+    display: inline-block;
+}
+
+.navbar-item:hover > ul,
+.navbar-item:focus > ul,
+.navbar-item:focus-within > ul {
+    display: block;
 }
