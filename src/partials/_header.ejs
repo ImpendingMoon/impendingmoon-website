@@ -1,0 +1,36 @@
+<header>
+    <a href="/" class="logo"><h1>ImpendingMoon</h1></a>
+    <div class="box">
+        <nav class="navbar">
+            <ul role="menubar">
+                <li class="navbar-item" role="none">
+                    <a href="/" role="menuitem" <%- currentPage === "home" ? 'aria-current="true"' : "" -%>>
+                        Home
+                    </a>
+                </li>
+                <li class="navbar-item" role="none">
+                    <a href="/about" role="menuitem" <%- currentPage === "about" ? 'aria-current="true"' : "" -%>>
+                        About
+                    </a>
+                </li>
+                <li class="navbar-item" role="none">
+                    <a href="/computers"
+                       role="menuitem" <%- currentPage === "computers" ? 'aria-current="true"' : "" -%>>
+                        Computers
+                    </a>
+                </li>
+                <li class="navbar-item" role="none">
+                    <a href="/recommendations"
+                       role="menuitem" <%- currentPage === "recommends" ? 'aria-current="true"' : "" -%>>
+                        Recommends
+                    </a>
+                </li>
+                <li class="navbar-item" role="none">
+                    <a href="/projects" role="menuitem" <%- currentPage === "projects" ? 'aria-current="true"' : "" -%>>
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -10,24 +10,12 @@
 </head>
 <body>
 <div id="page">
-    <header>
-        <a href="/" class="logo"><h1>ImpendingMoon</h1></a>
-        <div class="box">
-            <nav class="navbar">
-                <ul role="menubar">
-                    <li class="navbar-item" role="none"><a href="/" role="menuitem">Home</a></li>
-                    <li class="navbar-item" role="none"><a href="/about" role="menuitem">About</a></li>
-                    <li class="navbar-item" role="none"><a href="/computers" role="menuitem" aria-current="true">Computers</a>
-                    </li>
-                    <li class="navbar-item" role="none"><a href="/recommendations" role="menuitem">Recommends</a></li>
-                    <li class="navbar-item" role="none"><a href="/projects" role="menuitem">Projects</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <%- include("../partials/_header.ejs", {currentPage: "home"}) -%>
+
     <main>
         <div class="box">
             <h1>My Computers</h1>
+            <p>A list of most of my computers. Images coming soon! <small>(if I remember to take them)</small></p>
         </div>
         <section class="box">
             <h2>KindaJankMainPC</h2>
@@ -136,10 +124,9 @@
             </ul>
         </section>
     </main>
-    <aside></aside>
-    <footer>
-        <p>&copy; 2025 ImpendingMoon</p>
-    </footer>
+
+    <%- include("../partials/_aside.ejs") -%>
+    <%- include("../partials/_footer.ejs") -%>
 </div>
 </body>
 </html>
