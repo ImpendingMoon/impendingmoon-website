@@ -4,6 +4,7 @@
     --black: #221133;
     --white: #eeeeee;
     --background-color: ivory;
+    --shadow-color: rgba(0, 0, 0, 0.5);
     --brighten-value: 150%;
 }
 
@@ -22,7 +23,21 @@ body {
 
 h1 {
     font-size: 2em;
-    margin: calc(var(--spacing) / 2) 0 0;
+    margin: 0;
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0;
+}
+
+h3 {
+    font-style: italic;
+}
+
+p {
+    margin: var(--spacing) 0;
 }
 
 a {
@@ -35,12 +50,17 @@ a:hover {
     filter: brightness(var(--brighten-value));
 }
 
+ul {
+    margin: 0;
+}
+
 .box {
     background-color: var(--background-color);
     border: 4px solid var(--white);
     border-radius: var(--border-radius);
     margin: 0;
-    padding: 0 var(--spacing);
+    padding: var(--spacing);
+    overflow: auto;
 }
 
 .box + .box {
@@ -54,6 +74,12 @@ a:hover {
 
 footer {
     padding: 0 var(--spacing);
+}
+
+/* Helper classes */
+.float-left {
+    float: left;
+    margin-right: var(--spacing);
 }
 
 /* Basic reactive layout using CSS grid */
@@ -111,17 +137,18 @@ footer {
 /* Navigation stuff, not currently mobile-friendly */
 .navbar ul {
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar-item {
     position: relative;
     display: inline;
+    padding: var(--spacing);
 }
 
 .navbar-item a {
     font-size: 1.5em;
-    margin: 0 calc(var(--spacing) / 2);
 }
 
 /* Submenus */
@@ -136,7 +163,7 @@ footer {
     border-radius: var(--border-radius);
     margin: 0;
     padding: 0 var(--spacing);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 1px var(--shadow-color);
 }
 
 .navbar-item .navbar-item {
