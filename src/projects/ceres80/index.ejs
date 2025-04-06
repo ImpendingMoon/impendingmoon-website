@@ -12,7 +12,63 @@
 <div id="page">
     <%- include("../../partials/_header.ejs", {currentPage: "projects"}) -%>
     <main>
+        <div class="box">
+            <section>
+                <h1>Ceres80</h1>
+                <p>
+                    The Ceres80 is an 8-bit computer inspired by Ben Eater's 6502 computer.
+                    <br>
+                    It is built around the Z80 microprocessor, with an independent console-like design.
+                    <br>
+                    I have not created schematics or very good documentation for the system.
+                    Also the Z80 line of components was discontinued in June 2024 (womp womp).
+                    <br>
+                    The plan is to finish the firmware and shell, and write a few user applications for it. I'm also
+                    developing an emulator for the system, named Ceres80Emu.
+                </p>
+            </section>
 
+            <section>
+                <h2>Specs</h2>
+                <ul>
+                    <li>CPU: Z80 @ 6.144 MHz</li>
+                    <li>
+                        Memory:
+                        <ul>
+                            <li>32 KiB Firmware ROM</li>
+                            <li>32 KiB RAM</li>
+                        </ul>
+                    </li>
+                    <li>Display: 128x64 Monochrome LCD</li>
+                    <li>Input: NES-Style 8-Button Controls</li>
+                    <li>Storage: SD Card Interface</li>
+                    <li>Timing: 1000 Hz Interrupt Timer</li>
+                    <li>Motherboard: 3 BB830 Breadboards</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Future Plans</h2>
+                <ol>
+                    <li>Develop an emulator for the system (so I can develop firmware without constantly burning a physical ROM dear lord it's a pain)</li>
+                    <li>Finish writing the core firmware</li>
+                    <li>Write an SD Card driver</li>
+                    <li>Develop a shell program to load programs from the SD Card</li>
+                    <li>Write some user applications</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Repositories</h2>
+                <p>
+                    Documentation, code, and eventually schematics can be found at:
+                    <a href="https://github.com/ImpendingMoon/Ceres80" target="_blank">https://github.com/ImpendingMoon/Ceres80</a>
+                    <br>
+                    Ceres80Emu can be found at:
+                    <a href="https://github.com/ImpendingMoon/Ceres80Emu" target="_blank">https://github.com/ImpendingMoon/Ceres80Emu</a>
+                </p>
+            </section>
+        </div>
     </main>
     <%- include("../../partials/_aside.ejs") -%>
     <%- include("../../partials/_footer.ejs") -%>
