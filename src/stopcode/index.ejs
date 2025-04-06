@@ -15,65 +15,67 @@
     <%- include("../partials/_header.ejs", {currentPage: ""}) -%>
 
     <main>
-        <section class="box">
-            <h1>Resolving Blue Screen errors in ImpendingMoon</h1>
-            <p>
-                Blue screen errors (also called <em>vibe checks, STOP button errors, stream errors, or OUCH errors</em>)
-                can occur if a serious problem causes ImpendingMoon to shut down or restart the stream unexpectedly to
-                protect himself from embarrassment. You might see a message that says, "The broadcast you are watching
-                has ended" or a similar message.
-            </p>
-            <p>
-                A rogue chat message, bodged ethernet cable, or the terrible code Moon writes might have caused this
-                error. To help determine the cause, the blue screen error might display a STOP code, such as
-                ROSS_HAS_ESCAPED. When it's available, the name of the scene that was being broadcast is also listed
-                after "What failed:".
-            </p>
-        </section>
-        <section class="box">
-            <h2>Basic Troubleshooting Steps for Blue Screen Errors</h2>
-            <ol>
-                <li>
-                    <strong>Remove any new items.</strong> If you added a new input, widget, or OBS plugin, try
-                    disabling it and restarting the stream.
-                </li>
-                <li>
-                    <strong>Start the stream in emote-only mode.</strong>
-                </li>
-                <li>
-                    <strong>Check the Channel Manager.</strong>
-                </li>
-                <li>
-                    <strong>Check for sufficient free space on the hard drive.</strong>
-                </li>
-                <li>
-                    <strong>Install the latest OBS Updates.</strong>
-                </li>
-                <li>
-                    <strong>Restore ImpendingMoon.</strong>
-                </li>
-            </ol>
-        </section>
-        <section class="box">
-            <h2>Advanced Troubleshooting Steps for Blue Screen Errors</h2>
-            <ol>
-                <li>
-                    <strong>Check the VOD.</strong>
-                </li>
-                <li>
-                    <strong>Run the Memory Diagnostics Tool.</strong>
-                </li>
-                <li>
-                    <strong>Take a Nap.</strong> Just go to sleep.
-                </li>
-            </ol>
-        </section>
-        <section class="box">
-            <h2>We'd Love Your Feedback!</h2>
-            <p>
-                Participate in a research study about your ImpendingMoon experience.
-            </p>
-        </section>
+        <div class="box">
+            <section>
+                <h1>Resolving Blue Screen errors in ImpendingMoon</h1>
+                <p>
+                    Blue screen errors (also called <em>vibe checks, STOP button errors, stream errors, or OUCH errors</em>)
+                    can occur if a serious problem causes ImpendingMoon to shut down or restart the stream unexpectedly to
+                    protect himself from embarrassment. You might see a message that says, "The broadcast you are watching
+                    has ended" or a similar message.
+                </p>
+                <p>
+                    A rogue chat message, bodged ethernet cable, or the terrible code Moon writes might have caused this
+                    error. To help determine the cause, the blue screen error might display a STOP code, such as
+                    ROSS_HAS_ESCAPED. When it's available, the name of the scene that was being broadcast is also listed
+                    after "What failed:".
+                </p>
+            </section>
+            <section>
+                <h2>Basic Troubleshooting Steps for Blue Screen Errors</h2>
+                <ol>
+                    <li>
+                        <strong>Remove any new items.</strong> If you added a new input, widget, or OBS plugin, try
+                        disabling it and restarting the stream.
+                    </li>
+                    <li>
+                        <strong>Start the stream in emote-only mode.</strong>
+                    </li>
+                    <li>
+                        <strong>Check the Channel Manager.</strong>
+                    </li>
+                    <li>
+                        <strong>Check for sufficient free space on the hard drive.</strong>
+                    </li>
+                    <li>
+                        <strong>Install the latest OBS Updates.</strong>
+                    </li>
+                    <li>
+                        <strong>Restore ImpendingMoon.</strong>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h2>Advanced Troubleshooting Steps for Blue Screen Errors</h2>
+                <ol>
+                    <li>
+                        <strong>Check the VOD.</strong>
+                    </li>
+                    <li>
+                        <strong>Run the Memory Diagnostics Tool.</strong>
+                    </li>
+                    <li>
+                        <strong>Take a Nap.</strong> Just go to sleep.
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h2>We'd Love Your Feedback!</h2>
+                <p>
+                    Participate in a research study about your ImpendingMoon experience.
+                </p>
+            </section>
+        </div>
     </main>
 
     <%- include("../partials/_aside.ejs") -%>

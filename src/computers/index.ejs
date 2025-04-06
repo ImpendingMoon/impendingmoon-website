@@ -13,123 +13,125 @@
     <%- include("../partials/_header.ejs", {currentPage: "computers"}) -%>
 
     <main>
-        <section class="box">
-            <h1>My Computers</h1>
-            <p>A list of most of my computers. Images coming soon! <small>(if I remember to take them)</small></p>
-        </section>
-        <section class="box">
-            <h2>KindaJankMainPC</h2>
-            <p>
-                My primary desktop, for better or for worse.
-                <br>
-                I first built it in 2018 and have slowly upgraded it over time with random parts I come across.
-                I don't plan on upgrading it further, instead I plan on replacing it whenever it breaks or can't run
-                most things.
-            </p>
-            <h3>Specs</h3>
-            <ul>
-                <li>OS: Fedora Workstation KDE 41</li>
-                <li>CPU: Ryzen 9 5900x</li>
-                <li>GPU: Nvidia GeForce RTX 3060 Ti</li>
-                <li>RAM: 32GB of mixed 2x8GB sets</li>
-                <li>Storage: 2x 1TB NVMe SSDs</li>
-                <li>Optical: DVD+RW drive</li>
-            </ul>
-        </section>
-        <section class="box">
-            <h2>KindaJankMainLT</h2>
-            <p>
-                My primary laptop: an HP Envy x360.
-                <br>
-                I got it in 2020 and upgraded the RAM and Storage.
-                I <em>probably</em> broke the second RAM slot, so I'm stuck with one stick, which is enough for now.
-                <br>
-                The hinge broke during finals, so I rushed to replace the top case and forgot to move the lid
-                detection
-                magnet to the new case. This means the laptop can't detect when the lid is closed,
-                which is terrible with a touchscreen.
-            </p>
-            <h3>Specs</h3>
-            <ul>
-                <li>OS: Fedora Workstation KDE 41</li>
-                <li>CPU: Intel Core i5-10210U</li>
-                <li>GPU: Nvidia GeForce MX330</li>
-                <li>RAM: 16GB</li>
-                <li>Storage: 1TB NVMe SSD</li>
-            </ul>
-        </section>
-        <section class="box">
-            <h2>DangOldPC</h2>
-            <p>
-                A beast of a personal computer--for 1996, that is.
-                <br>
-                I got it at a garage sale for $5 somewhere in 2021. It came in very bad condition, and was covered
-                in
-                stickers and fridge magnets. I cleaned it up and replaced the CD-ROM drive with a CD burner, and
-                replaced the old Pentium 90 with a Pentium 133.
-                <br>
-                The previous owner modded it in some way, there are bodge wires underneath the motherboard. I don't
-                know
-                exactly what the mods are doing, but it works so I leave it alone.
-                <br>
-                Playing DOOM and Quake on it is wonderful. Playing Half Life is dreadful. It's only blue-screened a
-                few
-                times, mostly from my own code.
-            </p>
-            <h3>Specs</h3>
-            <ul>
-                <li>OS: Windows 95 OSR2</li>
-                <li>CPU: Intel Pentium 133</li>
-                <li>GPU: S3 Trio64</li>
-                <li>RAM: 32MB</li>
-                <li>Sound: Sound Blaster AWE64 Gold</li>
-                <li>Storage: 2x 1GB SCSI HDDs (loud)</li>
-                <li>Optical: 52x CD-RW Drive</li>
-            </ul>
-        </section>
-        <section class="box">
-            <h2>KindaOldLT</h2>
-            <p>
-                A neat little business machine from late 1999, if you can get past the lack of Ethernet.
-                <br>
-                I picked up this Dell Inspiron 7500 off eBay in 2023. It came with a working battery, remarkably.
-                The battery did not last and I had to replace the hard drive twice.
-                <br>
-                It's a very nice machine to work with. No problems running Office 2000, Visual Studio 6, or games
-                like
-                Pharaoh and SimCity 3000.
-            </p>
-            <h3>Specs</h3>
-            <ul>
-                <li>OS: Windows 2000 Professional SP4</li>
-                <li>CPU: Intel Pentium III 600</li>
-                <li>GPU: ATI Rage Mobility Pro</li>
-                <li>RAM: 384MB</li>
-                <li>Storage: 40GB PATA HDD</li>
-            </ul>
-        </section>
-        <section class="box">
-            <h2>PrettyGoodOldLT</h2>
-            <p>
-                A lot of "wasteful" specs in 2009 make this actually usable 15 years later.
-                <br>
-                It's an HP Pavilion dv7-2185dx laptop I bought at Goodwill in 2019, I think.
-                <br>
-                With an SSD it is remarkably usable with modern Linux. It isn't fantastic, of course, but even in
-                full-fat KDE Plasma I could do basic school and office work on it.
-                <br>
-                I even got it to run Minecraft 1.21
-                <small><em>(with a ton of performance mods at low settings)</em></small>.
-            </p>
-            <h3>Specs</h3>
-            <ul>
-                <li>OS: Debian Trixie</li>
-                <li>CPU: Intel Core 2 Quad Q9000</li>
-                <li>GPU: ATI Mobility Radeon HD 4650</li>
-                <li>RAM: 6GB</li>
-                <li>Storage: 120GB SATA SSD</li>
-            </ul>
-        </section>
+        <div class="box">
+            <section>
+                <h1>My Computers</h1>
+                <p>A list of most of my computers. Images coming soon! <small>(if I remember to take them)</small></p>
+            </section>
+            <section>
+                <h2>KindaJankMainPC</h2>
+                <p>
+                    My primary desktop, for better or for worse.
+                    <br>
+                    I first built it in 2018 and have slowly upgraded it over time with random parts I come across.
+                    I don't plan on upgrading it further, instead I plan on replacing it whenever it breaks or can't run
+                    most things.
+                </p>
+                <h3>Specs</h3>
+                <ul>
+                    <li>OS: Fedora Workstation KDE 41</li>
+                    <li>CPU: Ryzen 9 5900x</li>
+                    <li>GPU: Nvidia GeForce RTX 3060 Ti</li>
+                    <li>RAM: 32GB of mixed 2x8GB sets</li>
+                    <li>Storage: 2x 1TB NVMe SSDs</li>
+                    <li>Optical: DVD+RW drive</li>
+                </ul>
+            </section>
+            <section>
+                <h2>KindaJankMainLT</h2>
+                <p>
+                    My primary laptop: an HP Envy x360.
+                    <br>
+                    I got it in 2020 and upgraded the RAM and Storage.
+                    I <em>probably</em> broke the second RAM slot, so I'm stuck with one stick, which is enough for now.
+                    <br>
+                    The hinge broke during finals, so I rushed to replace the top case and forgot to move the lid
+                    detection
+                    magnet to the new case. This means the laptop can't detect when the lid is closed,
+                    which is terrible with a touchscreen.
+                </p>
+                <h3>Specs</h3>
+                <ul>
+                    <li>OS: Fedora Workstation KDE 41</li>
+                    <li>CPU: Intel Core i5-10210U</li>
+                    <li>GPU: Nvidia GeForce MX330</li>
+                    <li>RAM: 16GB</li>
+                    <li>Storage: 1TB NVMe SSD</li>
+                </ul>
+            </section>
+            <section>
+                <h2>DangOldPC</h2>
+                <p>
+                    A beast of a personal computer--for 1996, that is.
+                    <br>
+                    I got it at a garage sale for $5 somewhere in 2021. It came in very bad condition, and was covered
+                    in
+                    stickers and fridge magnets. I cleaned it up and replaced the CD-ROM drive with a CD burner, and
+                    replaced the old Pentium 90 with a Pentium 133.
+                    <br>
+                    The previous owner modded it in some way, there are bodge wires underneath the motherboard. I don't
+                    know
+                    exactly what the mods are doing, but it works so I leave it alone.
+                    <br>
+                    Playing DOOM and Quake on it is wonderful. Playing Half Life is dreadful. It's only blue-screened a
+                    few
+                    times, mostly from my own code.
+                </p>
+                <h3>Specs</h3>
+                <ul>
+                    <li>OS: Windows 95 OSR2</li>
+                    <li>CPU: Intel Pentium 133</li>
+                    <li>GPU: S3 Trio64</li>
+                    <li>RAM: 32MB</li>
+                    <li>Sound: Sound Blaster AWE64 Gold</li>
+                    <li>Storage: 2x 1GB SCSI HDDs (loud)</li>
+                    <li>Optical: 52x CD-RW Drive</li>
+                </ul>
+            </section>
+            <section>
+                <h2>KindaOldLT</h2>
+                <p>
+                    A neat little business machine from late 1999, if you can get past the lack of Ethernet.
+                    <br>
+                    I picked up this Dell Inspiron 7500 off eBay in 2023. It came with a working battery, remarkably.
+                    The battery did not last and I had to replace the hard drive twice.
+                    <br>
+                    It's a very nice machine to work with. No problems running Office 2000, Visual Studio 6, or games
+                    like
+                    Pharaoh and SimCity 3000.
+                </p>
+                <h3>Specs</h3>
+                <ul>
+                    <li>OS: Windows 2000 Professional SP4</li>
+                    <li>CPU: Intel Pentium III 600</li>
+                    <li>GPU: ATI Rage Mobility Pro</li>
+                    <li>RAM: 384MB</li>
+                    <li>Storage: 40GB PATA HDD</li>
+                </ul>
+            </section>
+            <section>
+                <h2>PrettyGoodOldLT</h2>
+                <p>
+                    A lot of "wasteful" specs in 2009 make this actually usable 15 years later.
+                    <br>
+                    It's an HP Pavilion dv7-2185dx laptop I bought at Goodwill in 2019, I think.
+                    <br>
+                    With an SSD it is remarkably usable with modern Linux. It isn't fantastic, of course, but even in
+                    full-fat KDE Plasma I could do basic school and office work on it.
+                    <br>
+                    I even got it to run Minecraft 1.21
+                    <small><em>(with a ton of performance mods at low settings)</em></small>.
+                </p>
+                <h3>Specs</h3>
+                <ul>
+                    <li>OS: Debian Trixie</li>
+                    <li>CPU: Intel Core 2 Quad Q9000</li>
+                    <li>GPU: ATI Mobility Radeon HD 4650</li>
+                    <li>RAM: 6GB</li>
+                    <li>Storage: 120GB SATA SSD</li>
+                </ul>
+            </section>
+        </div>
     </main>
 
     <%- include("../partials/_aside.ejs") -%>
