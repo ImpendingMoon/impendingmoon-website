@@ -1,8 +1,11 @@
 <header>
     <a href="/" class="logo"><h1>ImpendingMoon</h1></a>
-    <div class="box" style="overflow: visible;">
+
+    <button id="nav-toggle" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+
+    <div id="nav-box" class="box" style="overflow: visible;">
         <nav class="navbar">
-            <ul role="menubar">
+            <ul id="nav-links" role="menubar">
                 <li class="navbar-item" role="none">
                     <a href="/" role="menuitem" <%- currentPage === "home" ? 'aria-current="true"' : "" -%>>
                         Home
@@ -39,3 +42,12 @@
         </nav>
     </div>
 </header>
+
+<script>
+    document.getElementById("nav-toggle").addEventListener("click", () => {
+        const navBox = document.getElementById("nav-box");
+        const navToggle = document.getElementById("nav-toggle")
+        const isOpen = navBox.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen);
+    })
+</script>

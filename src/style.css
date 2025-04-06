@@ -83,47 +83,6 @@ footer {
     margin-right: var(--spacing);
 }
 
-/* Basic reactive layout using CSS grid */
-
-@media (max-width: 1000px) {
-    #page {
-        display: grid;
-        grid-template-areas:
-        "header"
-        "main"
-        "aside"
-        "footer";
-        grid-gap: var(--spacing);
-        min-height: 100vh;
-        margin: auto;
-    }
-
-    /* Hacky way of handling responsive navbar. Should make collapsable hamburger menu on small screens. */
-    .navbar-item {
-        display: block;
-    }
-}
-
-@media (min-width: 1001px) {
-    #page {
-        display: grid;
-        grid-template-areas:
-        "header header"
-        "aside main"
-        "footer footer";
-        grid-gap: 0.5em;
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: auto 1fr auto;
-        min-height: 100vh;
-        max-width: 2048px;
-        margin: auto;
-    }
-
-    .navbar-item {
-        display: inline;
-    }
-}
-
 #page > header {
     grid-area: header;
 }
@@ -144,9 +103,17 @@ footer {
     border-top-right-radius: var(--border-radius);
 }
 
-/* Navigation stuff, not currently mobile-friendly */
+/* Navigation stuff */
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: var(--white);
+    cursor: pointer;
+}
+
 .navbar ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -160,27 +127,98 @@ footer {
     font-size: 1.5em;
 }
 
-/* Submenus */
-.navbar-item > ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background-color);
-    border: 4px solid var(--border-color);
-    border-radius: var(--border-radius);
-    margin: 0;
-    padding: 0 var(--spacing);
-    box-shadow: 1px 1px 1px var(--shadow-color);
+/* Basic reactive layout using CSS grid */
+
+@media (max-width: 1000px) {
+    #page {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer";
+        grid-gap: var(--spacing);
+        min-height: 100vh;
+        margin: auto;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0.5em;
+    }
+
+    #nav-box {
+        display: none;
+    }
+
+    #nav-box.open {
+        display: block;
+    }
+
+    .navbar-item {
+        display: block;
+    }
+
+    .navbar-item + * {
+        border-top: 1px solid var(--border-color);
+    }
+
+    .navbar-item > ul {
+        font-size: 0.9em;
+    }
 }
 
-.navbar-item .navbar-item {
-    display: inline-block;
-}
+@media (min-width: 1001px) {
+    #page {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+        grid-gap: 0.5em;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+        max-width: 2048px;
+        margin: auto;
+    }
 
-.navbar-item:hover > ul,
-.navbar-item:focus > ul,
-.navbar-item:focus-within > ul {
-    display: block;
+    .hamburger {
+        display: none;
+    }
+
+    .navbar-item {
+        display: inline;
+    }
+
+    /* Submenus */
+    .navbar-item > ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-color);
+        border: 4px solid var(--border-color);
+        border-radius: var(--border-radius);
+        margin: 0;
+        padding: 0 var(--spacing);
+        box-shadow: 1px 1px 1px var(--shadow-color);
+    }
+
+    .navbar-item .navbar-item {
+        display: inline-block;
+    }
+
+    .navbar-item:hover > ul,
+    .navbar-item:focus > ul,
+    .navbar-item:focus-within > ul {
+        display: block;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+    }
 }
