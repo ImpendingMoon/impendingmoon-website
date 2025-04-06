@@ -5,8 +5,9 @@
     --white: #fffbf7;
     --background-color: #fff5eb;
     --border-color: #3a47a6;
+    --link-color: #442266;
     --shadow-color: rgba(0, 0, 0, 0.5);
-    --brighten-value: 150%;
+    --brighten-value: 200%;
 }
 
 html {
@@ -43,11 +44,10 @@ p {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--link-color);
 }
 
 a:hover {
-    text-decoration: underline;
     filter: brightness(var(--brighten-value));
 }
 

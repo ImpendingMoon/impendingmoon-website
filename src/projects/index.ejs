@@ -11,7 +11,17 @@
 <body>
 <div id="page">
     <%- include("../partials/_header.ejs", {currentPage: "home"}) -%>
-    <main></main>
+    <main>
+        <section class="box">
+            <h1>Current Projects</h1>
+            <p>All the cool-ish stuff I'm working on.</p>
+        </section>
+
+        <section class="box">
+            <a href="/projects/ceres80"><h2>Ceres80</h2></a>
+            <p>An 8-bit breadboard computer based on the Z80.</p>
+        </section>
+    </main>
     <%- include("../partials/_aside.ejs") -%>
     <%- include("../partials/_footer.ejs") -%>
 </div>
