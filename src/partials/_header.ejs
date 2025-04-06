@@ -1,6 +1,6 @@
 <header>
     <a href="/" class="logo"><h1>ImpendingMoon</h1></a>
-    <div class="box">
+    <div class="box" style="overflow: visible;">
         <nav class="navbar">
             <ul role="menubar">
                 <li class="navbar-item" role="none">
@@ -29,6 +29,11 @@
                     <a href="/projects" role="menuitem" <%- currentPage === "projects" ? 'aria-current="true"' : "" -%>>
                         Projects
                     </a>
+                    <ul>
+                        <li class="navbar-item" role="none">
+                            <a href="/projects/ceres80" role="menuitem">Ceres80</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>
