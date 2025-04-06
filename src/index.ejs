@@ -14,12 +14,28 @@
     <%- include("partials/_header.ejs", {currentPage: "home"}) -%>
 
     <main>
-        <section class="box">
-            <img class="float-left" src="/images/pikachu-under-construction.gif"
-                 alt="Pikachu operating a jackhammer under a construction sign">
-            <h1>Under Construction</h1>
-            <p>We'll be fully operational soon! ish.</p>
-        </section>
+        <div class="box">
+            <section>
+                <img class="float-left" src="/images/pikachu-under-construction.gif"
+                     alt="Pikachu operating a jackhammer under a construction sign">
+                <h1>Under Construction</h1>
+                <p>We'll be fully operational soon! ish.</p>
+            </section>
+
+            <section>
+                <h2>In the meantime, you can...</h2>
+                <ul>
+                    <li><a href="/computers">Read about my computers!</a> (wow)</li>
+                    <li><a href="/projects">Look at what projects I'm doing!</a> (not a lot)</li>
+                    <li>
+                        <a href="https://www.youtube.com/@ImpendingMoon" target="_blank">
+                            Watch videos on my YouTube channel!
+                        </a>
+                        (yowzers)
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
 
     <%- include("partials/_aside.ejs") -%>

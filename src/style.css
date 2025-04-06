@@ -28,6 +28,10 @@ h1, h2, h3 {
     margin: 0;
 }
 
+section {
+    overflow: hidden;
+}
+
 section + section {
     margin-top: var(--spacing);
 }
