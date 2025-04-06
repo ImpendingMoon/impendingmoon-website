@@ -1,6 +1,6 @@
 :root {
-    --border-radius: 0.5em;
-    --spacing: 0.5em;
+    --border-radius: 0.5rem;
+    --spacing: 0.5rem;
     --black: #221133;
     --white: #fffbf7;
     --background-color: #fff5eb;
@@ -28,9 +28,12 @@ h1, h2, h3 {
     margin: 0;
 }
 
+section + section {
+    margin-top: var(--spacing);
+}
+
 h1 {
     font-size: 2em;
-    margin: 0;
 }
 
 h2 {
@@ -41,15 +44,9 @@ h3 {
     font-style: italic;
 }
 
-* + h1, h2, h3 {
-    margin-top: var(--spacing);
-}
-
 p {
     margin: 0 0 var(--spacing);
 }
-
-
 
 a {
     text-decoration: none;
@@ -60,7 +57,7 @@ a:hover {
     filter: brightness(var(--brighten-value));
 }
 
-ul {
+ul, ol {
     margin: 0;
 }
 
