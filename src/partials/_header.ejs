@@ -1,9 +1,9 @@
 <header>
-    <a href="/" class="logo"><h1>ImpendingMoon</h1></a>
+    <h1><a href="/" class="logo">ImpendingMoon</a></h1>
 
     <button id="nav-toggle" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
 
-    <div id="nav-box" class="box" style="overflow: visible;">
+    <div id="nav-box" class="box open" style="overflow: visible;">
         <nav class="navbar">
             <ul id="nav-links" role="menubar">
                 <li class="navbar-item" role="none">
@@ -38,9 +38,12 @@
 </header>
 
 <script>
-    document.getElementById("nav-toggle").addEventListener("click", () => {
-        const navBox = document.getElementById("nav-box");
-        const navToggle = document.getElementById("nav-toggle")
+    const navBox = document.getElementById("nav-box");
+    const navToggle = document.getElementById("nav-toggle");
+    // Open by default on browsers that don't enable JS so users can still use nav links
+    navBox.classList.remove("open");
+
+    navToggle.addEventListener("click", () => {
         const isOpen = navBox.classList.toggle("open");
         navToggle.setAttribute("aria-expanded", isOpen);
     })
