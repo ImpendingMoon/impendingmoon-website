@@ -1,6 +1,6 @@
 "use strict";
 
-// TODO: Load from storage or pull random from JSON
+// TODO: Load from localstorage or pull random from JSON
 let pet = {
     name: "Rocky 2",
     image: "/images/rocky.png",
@@ -152,6 +152,8 @@ function performAction(action) {
 }
 
 function tick() {
+    if(petState.isBusy) { return; }
+
     petState.happiness = clamp(petState.happiness - randomInt(4));
     petState.food = clamp(petState.food - randomInt(4));
     petState.energy = clamp(petState.energy + randomInt(4));
