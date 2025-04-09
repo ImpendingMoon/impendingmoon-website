@@ -1,6 +1,5 @@
 "use strict";
 
-// TODO: Load from localstorage or pull random from JSON
 let pet = {
     name: "Rocky 2",
     image: "/images/rocky.png",
@@ -9,12 +8,37 @@ let pet = {
     speakOptions: ["...", "....", "... ..."]
 };
 
-const petState = {
+function savePet() {
+    localStorage.setItem("pet", JSON.stringify(pet));
+}
+
+function loadPet() {
+    let newPet = localStorage.getItem("pet");
+    if(newPet) {
+        pet = JSON.parse(newPet);
+    } else {
+        // TODO: Randomly build a pet from parts in /json/moonpet.json
+    }
+}
+
+let petState = {
     happiness: 75,
     food: 75,
     energy: 75,
     isBusy: false
 };
+
+function saveState() {
+    localStorage.setItem("petState", JSON.stringify(petState));
+}
+
+function loadState() {
+    let state = localStorage.getItem("petState");
+    if(state) {
+        petState = JSON.parse(state);
+    }
+    petState.isBusy = false;
+}
 
 const petElements = {
     name: document.getElementById("petName"),
@@ -41,6 +65,9 @@ function randomInt(max) {
 }
 
 function initialize() {
+    loadPet();
+    loadState();
+
     petElements.name.innerText = pet.name;
     petElements.image.setAttribute("src", pet.image);
 
@@ -144,6 +171,8 @@ function performAction(action) {
 
     updateMeters();
     lockButtons();
+    savePet();
+    saveState();
 
     setTimeout(() => {
         unlockButtons();
@@ -160,6 +189,8 @@ function tick() {
 
     updateMeters();
     setStatus();
+    savePet();
+    saveState();
 }
 
 initialize();
