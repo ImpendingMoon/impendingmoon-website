@@ -41,6 +41,7 @@ function loadState() {
 }
 
 const petElements = {
+    container: document.getElementById("petJSContainer"),
     name: document.getElementById("petName"),
     image: document.getElementById("petImage"),
     happinessMeter: document.getElementById("petHappiness"),
@@ -74,6 +75,9 @@ function initialize() {
     updateMeters();
     setStatus();
     unlockButtons();
+
+    petElements.container.removeAttribute("hidden");
+    petElements.container.removeAttribute("aria-hidden");
 }
 
 function lockButtons() {

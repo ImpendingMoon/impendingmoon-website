@@ -233,12 +233,12 @@ footer {
 }
 
 /* Pet styles */
-#petName {
+.pet-name {
     text-align: center;
     margin-bottom: var(--spacing)
 }
 
-#petImage {
+.pet-image {
     display: block;
     width: 90%;
     max-width: 512px;
@@ -247,7 +247,7 @@ footer {
     margin: auto auto var(--spacing);
 }
 
-#petStatusContainer {
+.pet-status-container {
     display: grid;
     gap: 0 var(--spacing);
     grid-template-columns: auto 1fr;
@@ -259,7 +259,7 @@ footer {
     width: 100%;
 }
 
-#petControlsContainer {
+.pet-controls-container {
     display: flex;
     justify-content: space-around;
     gap: var(--spacing);
