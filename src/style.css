@@ -17,6 +17,10 @@ html {
     line-height: 1.4;
     font-family: sans-serif;
     background-color: #1a112c;
+    background-image: url("/images/background-top.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 5%;
 }
 
 body {
