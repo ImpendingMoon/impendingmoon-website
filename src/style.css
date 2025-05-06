@@ -33,14 +33,6 @@ h1, h2, h3 {
     margin: 0;
 }
 
-section {
-    display: flow-root;
-}
-
-section + section {
-    margin-top: var(--spacing);
-}
-
 h1 {
     font-size: 2em;
 }
@@ -76,17 +68,25 @@ button {
     font-size: 0.75em;
 }
 
+img {
+    display: block;
+}
+
+section {
+    display: flow-root;
+}
+
+section + section {
+    margin-top: var(--spacing);
+}
+
 figure {
     display: inline-block;
     padding: var(--spacing);
+    margin: var(--spacing);
     background: var(--black);
     color: var(--white);
     border-image: var(--border-image);
-}
-
-.img-medium {
-    width: 384px;
-    display: block;
 }
 
 figcaption {
@@ -115,15 +115,6 @@ figcaption {
 }
 
 /* Helper classes */
-.float-left {
-    float: left;
-    margin-right: var(--spacing);
-}
-
-.float-right {
-    float: right;
-    margin-left: var(--spacing);
-}
 
 .img-small {
     width: 256px;
@@ -138,11 +129,6 @@ figcaption {
 .img-large {
     width: 512px;
     object-fit: contain;
-}
-
-.center {
-    display: block;
-    margin: auto;
 }
 
 .border {
@@ -239,6 +225,10 @@ figcaption {
     .navbar-item > ul {
         font-size: 0.9em;
     }
+
+    .float-left, .float-right {
+        margin: var(--spacing) auto;
+    }
 }
 
 @media (min-width: 1001px) {
@@ -289,6 +279,16 @@ figcaption {
 
     .navbar ul {
         list-style-type: none;
+    }
+
+    .float-left {
+        float: left;
+        margin-right: var(--spacing);
+    }
+
+    .float-right {
+        float: right;
+        margin-left: var(--spacing);
     }
 }
 
