@@ -34,7 +34,7 @@ h1, h2, h3 {
 }
 
 section {
-    overflow: hidden;
+    display: flow-root;
 }
 
 section + section {
@@ -76,6 +76,26 @@ button {
     font-size: 0.75em;
 }
 
+figure {
+    display: inline-block;
+    padding: var(--spacing);
+    background: var(--black);
+    color: var(--white);
+    border-image: var(--border-image);
+}
+
+.img-medium {
+    width: 384px;
+    display: block;
+}
+
+figcaption {
+    width: 384px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
 .box {
     background-color: var(--background-color);
     border-image: var(--border-image);
@@ -98,6 +118,36 @@ button {
 .float-left {
     float: left;
     margin-right: var(--spacing);
+}
+
+.float-right {
+    float: right;
+    margin-left: var(--spacing);
+}
+
+.img-small {
+    width: 256px;
+    object-fit: contain;
+}
+
+.img-medium {
+    width: 384px;
+    object-fit: contain;
+}
+
+.img-large {
+    width: 512px;
+    object-fit: contain;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+.border {
+    border-image: var(--border-image);
+    overflow: visible;
 }
 
 #page > header {
