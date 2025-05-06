@@ -1,6 +1,6 @@
 :root {
     --border-radius: 0.5rem;
-    --spacing: 0.5rem;
+    --spacing: 0.75rem;
     --black: #221133;
     --white: #fffbf7;
     --background-color: #fff5eb;
@@ -8,6 +8,7 @@
     --link-color: #553377;
     --shadow-color: rgba(0, 0, 0, 0.5);
     --brighten-value: 200%;
+    --border-image: url("/images/border.png") 30 / 16px / 8px repeat;
 }
 
 html {
@@ -67,12 +68,12 @@ ul, ol {
 
 .box {
     background-color: var(--background-color);
-    border: 4px solid var(--border-color);
-    border-radius: var(--border-radius);
+    border-image: var(--border-image);
     margin: 0;
     padding: var(--spacing);
     overflow: auto;
 }
+
 
 .box + .box {
     margin-top: var(--spacing);
@@ -109,8 +110,7 @@ footer {
     grid-area: footer;
     background-color: var(--black);
     color: var(--white);
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+    padding-top: 1rem;
 }
 
 /* Navigation stuff */
@@ -210,8 +210,7 @@ footer {
         top: 100%;
         left: 0;
         background-color: var(--background-color);
-        border: 4px solid var(--border-color);
-        border-radius: var(--border-radius);
+        border-image: var(--border-image);
         margin: 0;
         padding: 0 var(--spacing);
         box-shadow: 1px 1px 1px var(--shadow-color);
@@ -242,8 +241,8 @@ footer {
     display: block;
     width: 90%;
     max-width: 512px;
-    border: 4px solid var(--border-color);
-    border-radius: var(--border-radius);
+    border: 4px solid transparent;
+    border-image: var(--border-image);
     margin: auto auto var(--spacing);
 }
 
