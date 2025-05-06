@@ -94,10 +94,6 @@ button {
     font-family: "Comic Sans MS", cursive;
 }
 
-footer {
-    padding: 0 var(--spacing);
-}
-
 /* Helper classes */
 .float-left {
     float: left;
@@ -118,9 +114,14 @@ footer {
 
 #page > footer {
     grid-area: footer;
-    background-color: var(--black);
-    color: var(--white);
-    padding-top: 1rem;
+    background-color: var(--background-color);
+    border-image: var(--border-image);
+    padding: 1rem;
+    margin-bottom: var(--spacing);
+}
+
+#page > footer > * {
+    margin: 0;
 }
 
 /* Navigation stuff */
