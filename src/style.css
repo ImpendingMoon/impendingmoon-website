@@ -91,14 +91,17 @@ figure {
     background: var(--black);
     color: var(--white);
     border-image: var(--border-image);
+    max-width: max-content;
 }
 
 figcaption {
-    width: min(384px, 100%);
+    display: block;
     text-align: center;
     word-wrap: break-word;
+    max-width: 384px;
+    width: 100%;
+    text-align: center;
 }
-
 
 .box {
     background-color: var(--background-color);
