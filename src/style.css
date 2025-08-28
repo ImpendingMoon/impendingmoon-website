@@ -8,6 +8,7 @@
     --link-color: #553377;
     --shadow-color: rgba(0, 0, 0, 0.5);
     --brighten-value: 200%;
+    --darken-value: 75%;
     --border-image: url("/images/border.png") 30 / 16px / 8px repeat;
 }
 
@@ -170,6 +171,10 @@ figcaption {
     cursor: pointer;
 }
 
+.hamburger:hover, .hamburger:focus {
+    filter: brightness(var(--darken-value));
+}
+
 .navbar ul {
     padding: 0;
     margin: 0;
@@ -202,7 +207,7 @@ figcaption {
     .hamburger {
         display: block;
         position: absolute;
-        top: 0;
+        top: 0.5em;
         right: 0.5em;
     }
 
