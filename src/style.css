@@ -70,6 +70,9 @@ button {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
 }
 
 section {
@@ -90,7 +93,7 @@ figure {
 }
 
 figcaption {
-    width: 384px;
+    width: min(384px, 100%);
     text-align: center;
     word-wrap: break-word;
 }
@@ -117,18 +120,15 @@ figcaption {
 /* Helper classes */
 
 .img-small {
-    width: 256px;
-    object-fit: contain;
+  width: 256px;
 }
 
 .img-medium {
-    width: 384px;
-    object-fit: contain;
+  width: 384px;
 }
 
 .img-large {
-    width: 512px;
-    object-fit: contain;
+  width: 512px;
 }
 
 .border {
