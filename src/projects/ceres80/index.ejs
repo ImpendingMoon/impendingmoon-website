@@ -30,10 +30,9 @@
                     2024 <em>(womp womp)</em>.
                 </p>
                 <p>
-                    The plan is to finish the firmware and shell, and write a few user applications for it. I'm also
-                    developing an emulator for the system, named Ceres80Emu.
+                    This project is currently on haitus. I wore out the section of the breadboard where the ROM sits,
+                    and I don't feel like rebuilding it at the moment.
                 </p>
-
             </section>
 
             <section>
@@ -50,7 +49,7 @@
                     <li>Display: 128x64 Monochrome LCD</li>
                     <li>Input: NES-Style 8-Button Controls</li>
                     <li>Storage: SD Card Interface</li>
-                    <li>Timing: 1000 Hz Interrupt Timer</li>
+                    <li>Timing: 100 Hz Interrupt Timer</li>
                     <li>Motherboard: 3 BB830 Breadboards</li>
                 </ul>
             </section>
@@ -58,10 +57,21 @@
             <section>
                 <h2>Future Plans</h2>
                 <ol>
-                    <li>Develop an emulator for the system (so I can develop firmware without constantly burning a physical ROM dear lord it's a pain)</li>
-                    <li>Finish writing the core firmware</li>
-                    <li>Write an SD Card driver</li>
-                    <li>Develop a shell program to load programs from the SD Card</li>
+                    <li>Create schematics for the computer</li>
+                    <li>
+                        Finish writing the emulator
+                        <ul>
+                            <li>Probably move it off of WinForms to something cross-platform</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Finish writing the operating system
+                        <ul>
+                            <li>Still debating whether to write it in C or assembly</li>
+                            <li>On one hand, C code generation on the Z80 isn't great</li>
+                            <li>On the other hand, I suck at programming in assembly</li>
+                        </ul>
+                    </li>
                     <li>Write some user applications</li>
                 </ol>
             </section>
