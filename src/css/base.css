@@ -34,16 +34,32 @@ h1, h2, h3 {
     margin: 0;
 }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-style: italic; }
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-style: italic;
+}
 
 p { margin: 0 0 var(--spacing); }
 
-a { text-decoration: none; color: var(--link-color); }
-a:hover { filter: brightness(var(--brighten-value)); }
+a { 
+    text-decoration: none;
+    color: var(--link-color);
+}
 
-ul, ol { margin: 0; }
+a:hover {
+    filter: brightness(var(--brighten-value));
+}
+
+ul, ol {
+    margin: 0;
+}
 
 button {
     cursor: pointer;
@@ -58,8 +74,13 @@ img {
     box-sizing: border-box;
 }
 
-section { display: flow-root; }
-section + section { margin-top: var(--spacing); }
+section {
+    display: flow-root;
+}
+
+section + section {
+    margin-top: var(--spacing);
+}
 
 figure {
     display: inline-block;

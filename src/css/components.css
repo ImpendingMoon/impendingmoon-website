@@ -6,11 +6,14 @@
     overflow: auto;
 }
 
-.box + .box { margin-top: var(--spacing); }
+.box + .box {
+    margin-top: var(--spacing);
+}
 
 .logo {
     color: var(--white);
     font-family: "Comic Sans MS", cursive;
+    text-shadow: 3px 3px 2px var(--shadow-color);
 }
 
 .img-small {
