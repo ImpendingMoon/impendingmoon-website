@@ -95,13 +95,12 @@ figure {
 }
 
 figcaption {
-    display: block;
     text-align: center;
     word-wrap: break-word;
     max-width: 384px;
-    width: 100%;
-    text-align: center;
 }
+
+
 
 .box {
     background-color: var(--background-color);
