@@ -1,0 +1,23 @@
+#page > header {
+    grid-area: header;
+}
+
+#page > aside {
+    grid-area: aside;
+}
+
+#page > main {
+    grid-area: main;
+}
+
+#page > footer {
+    grid-area: footer;
+    background-color: var(--background-color);
+    border-image: var(--border-image);
+    padding: 1rem;
+    margin-bottom: var(--spacing);
+}
+
+#page > footer > * {
+    margin: 0;
+}
