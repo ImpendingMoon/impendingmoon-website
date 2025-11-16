@@ -1,7 +1,8 @@
 <header>
     <h1><a href="/" class="logo">ImpendingMoon</a></h1>
 
-    <button id="nav-toggle" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" hidden>☰</button>
+    <button id="nav-toggle" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" hidden>☰
+    </button>
 
     <div id="nav-box" class="box open" style="overflow: visible;">
         <nav class="navbar">
@@ -37,14 +38,4 @@
     </div>
 </header>
 
-<script>
-    const navBox = document.getElementById("nav-box");
-    const navToggle = document.getElementById("nav-toggle");
-    // Open by default on browsers that don't enable JS so users can still use nav links
-    navBox.classList.remove("open");
-
-    navToggle.addEventListener("click", () => {
-        const isOpen = navBox.classList.toggle("open");
-        navToggle.setAttribute("aria-expanded", isOpen);
-    })
-</script>
+<script type="module" src="/js/navbar.js"></script>
