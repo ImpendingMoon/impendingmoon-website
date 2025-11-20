@@ -51,6 +51,7 @@ p { margin: 0 0 var(--spacing); }
 a { 
     text-decoration: none;
     color: var(--link-color);
+    overflow-wrap: break-word;
 }
 
 a:hover {
