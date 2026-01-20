@@ -2,7 +2,7 @@
 
 let pet = {
     name: "Rocky 2",
-    image: "/images/rocky.png",
+    image: "/images/rocky.webp",
     foodOptions: ["an apple", "a fish taco", "a slice of cheese"],
     playOptions: ["fetch", "hide and seek", "a dance-off"],
     speakOptions: ["...", "....", "... ..."]
