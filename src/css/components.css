@@ -1,34 +1,38 @@
 .box {
-    background-color: var(--background-color);
-    border-image: var(--border-image);
-    margin: 0;
-    padding: var(--spacing);
-    overflow: auto;
+  background-color: var(--background-color);
+  border-image: var(--border-image);
+  margin: 0;
+  padding: var(--spacing);
+  overflow: auto;
 }
 
 .box + .box {
-    margin-top: var(--spacing);
+  margin-top: var(--spacing);
 }
 
 .logo {
-    color: var(--white);
-    font-family: "Comic Sans MS", cursive;
-    text-shadow: 3px 3px 2px var(--shadow-color);
+  color: var(--white);
+  font-family: "Comic Sans MS", cursive;
+  text-shadow: 3px 3px 2px var(--shadow-color);
 }
 
 .img-small {
-    width: 256px;
+  width: 256px;
 }
 
 .img-medium {
-    width: 384px;
+  width: 384px;
 }
 
 .img-large {
-    width: 512px;
+  width: 512px;
 }
 
 .border {
-    border-image: var(--border-image);
-    overflow: visible;
+  border-image: var(--border-image);
+  overflow: visible;
+}
+
+.two-column {
+  column-count: 2;
 }

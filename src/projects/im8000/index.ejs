@@ -1,76 +1,89 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <%- include("../../partials/_stylesheets.ejs") -%>
-    <title>IM8000 | ImpendingMoon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <%- include("../../partials/_stylesheets.ejs") -%>
+  <title>IM8000 | ImpendingMoon</title>
 </head>
 
 <body>
-<div id="page">
+  <div id="page">
     <%- include("../../partials/_header.ejs", {currentPage: "projects"}) -%>
     <main>
-        <div class="box">
-            <section>
-                <h1>IM8000</h1>
-                <p>
-                    The IM8000 is a homebrew instruction set architecture designed to be an alternate-history successor
-                    to the Zilog Z80.
-                </p>
-                <p>
-                    It is intended to fit between the complexity of the Intel 8086 and Motorola 68000, keeping the Z80's
-                    programming model but with a clean, orthogonal 16/32-bit design.
-                </p>
-                <p>
-                    As a note, I am not a computer engineer, and don't claim to be any good at this. I made it for fun
-                    in my spare time, and it just so happens to be complete enough for me to share it.
-                </p>
-                <h2>History</h2>
-                <p>
-                    I started on this project after learning about the Z8000's design and looking more into the
-                    Z280 and eZ80. Zilog correctly identified that the Z80 would make a poor base for a 16-bit
-                    processor, but completely missed the mark with the Z8000. It was too different, too complex, and
-                    too late to market.
-                </p>
-                <p>
-                    I began by experimenting with a 65816-esque design, keeping the same instruction encodings, but
-                    extending them to 16-bit with extended operand/address flags. It was... just very okay. It was still
-                    an  accumulator-based architecture with odd limitations. The extended modes were useful, but
-                    awkward. It never made it past basic assembly tests.
-                </p>
-                <p>
-                    The IM8000 is a combination of a few more unnamed experiments, introducing more elements from the
-                    8086, 68000, and some RISC processors. I experimented with different encodings, allowing all
-                    register pairs to use indexing mode, and adding block operations for C-style string operations. Most
-                    changes didn't stick. It all distilled down to the current architecture: A 16/32-bit processor with
-                    the same register set as the Z80, equivalents for every instruction on the Z80 <small>(except for
-                    IM 0 I guess)</small>, and a pretty RISCy encoding scheme.
-                </p>
-                <h2>Documentation</h2>
-                <p>
-                    The current reference document for the IM8000 can be found here:
-                    <a href="/files/im8000/im8000_technical_reference_manual_v03.pdf" target="_blank">
-                        IM8000_Technical_Reference<wbr>_Manual_v03.pdf
-                    </a>
-                </p>
-                <p>
-                    I am absolutely not a technical writer, and it shows. This document was written in Obsidian and
-                    exported directly as a PDF. It's not the nicest to look at, and it certainly could use a ton
-                    of refinement. But, all the major information should be organized enough to easily find everything.
-                </p>
-                <p>
-                    I do plan on eventually writing an emulator and assembler for the IM8000, but I already program
-                    eight hours a day for my job, and my motivation to program on my own time fluctuates wildly. If you
-                    decide to do anything with this architecture, absolutely let me know. I would love to see it.
-                </p>
-            </section>
-        </div>
+      <div class="box">
+        <section>
+          <h1>IM8000</h1>
+          <p>
+            The IM8000 is a homebrew instruction set architecture designed to be an alternate-history successor
+            to the Zilog Z80.
+          </p>
+          <p>
+            It is intended to fit between the complexity of the Intel 8086 and Motorola 68000, keeping the Z80's
+            programming model but with a clean, orthogonal 16/32-bit design.
+          </p>
+          <p>
+            As a note, I am not a computer engineer, and don't claim to be any good at this. I made it for fun
+            in my spare time, and it just so happens to be complete enough for me to share it.
+          </p>
+          <h2>History</h2>
+          <p>
+            I started on this project after learning about the Z8000's design and looking more into the
+            Z280 and eZ80. Zilog correctly identified that the Z80 would make a poor base for a 16-bit
+            processor, but completely missed the mark with the Z8000. It was too different, too complex, and
+            too late to market.
+          </p>
+          <p>
+            I began by experimenting with a 65816-esque design, keeping the same instruction encodings, but
+            extending them to 16-bit with extended operand/address flags. It was... just very okay. It was still
+            an accumulator-based architecture with odd limitations. The extended modes were useful, but
+            awkward. It never made it past basic assembly tests.
+          </p>
+          <p>
+            The IM8000 is a combination of a few more unnamed experiments, introducing more elements from the
+            8086, 68000, and some RISC processors. I experimented with different encodings, allowing all
+            register pairs to use indexing mode, and adding block operations for C-style string operations. Most
+            changes didn't stick. It all distilled down to the current architecture: A 16/32-bit processor with
+            the same register set as the Z80, equivalents for every instruction on the Z80 <small>(except for
+              IM 0 I guess)</small>, and a pretty RISCy encoding scheme.
+          </p>
+          <h2>Documentation</h2>
+          <p>
+            The current reference document for the IM8000 can be found here:
+            <a href="/files/im8000/im8000_technical_reference_manual_v05.pdf" target="_blank">
+              IM8000_Technical_Reference<wbr>_Manual_v05.pdf
+            </a>
+          </p>
+          <p>
+            Previous versions of the reference document can be found here:
+            <small>
+              <ul>
+                <li>
+                  <a href="/files/im8000/im8000_technical_reference_manual_v03.pdf" target="_blank">
+                    IM8000_Technical_Reference<wbr>_Manual_v03.pdf
+                  </a>
+                </li>
+              </ul>
+            </small>
+          </p>
+          <p>
+            I am absolutely not a technical writer, and it shows. This document was written in Obsidian and
+            exported directly as a PDF. It's not the nicest to look at, and it certainly could use a ton
+            of refinement. But, all the major information should be organized enough to easily find everything.
+          </p>
+          <p>
+            I do plan on eventually writing an emulator and assembler for the IM8000, but I already program
+            eight hours a day for my job, and my motivation to program on my own time fluctuates wildly. If you
+            decide to do anything with this architecture, absolutely let me know. I would love to see it.
+          </p>
+        </section>
+      </div>
     </main>
     <%- include("../../partials/_aside.ejs") -%>
     <%- include("../../partials/_footer.ejs") -%>
-</div>
+  </div>
 </body>
+
 </html>

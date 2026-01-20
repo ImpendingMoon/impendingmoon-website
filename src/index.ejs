@@ -1,46 +1,65 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <%- include("partials/_stylesheets.ejs") -%>
-    <title>Home | ImpendingMoon</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <%- include("partials/_stylesheets.ejs") -%>
+  <title>Home | ImpendingMoon</title>
 </head>
+
 <body>
-<div id="page">
+  <div id="page" class="no-aside">
 
     <%- include("partials/_header.ejs", {currentPage: "home"}) -%>
 
     <main>
-        <div class="box">
-            <section>
-                <img class="float-left" src="/images/pikachu-under-construction.gif"
-                     alt="Pikachu operating a jackhammer under a construction sign">
-                <h1>Under Construction</h1>
-                <p>We'll be fully operational soon! ish.</p>
-            </section>
+      <section class="box">
+        <h2>Home</h2>
+        <p>
+          Hi Hello! I'm the ImpendingMoon, and this is my website :)
+          <br>
+          Last updated: <span id="lastUpdated"><%= new Date().toLocaleDateString() %></span>
+        </p>
+      </section>
 
-            <section>
-                <h2>In the meantime, you can...</h2>
-                <ul>
-                    <li><a href="/computers">Read about my computers!</a> (wow)</li>
-                    <li><a href="/projects">Look at what projects I'm doing!</a> (not a lot)</li>
-                    <li>
-                        <a href="https://vanillo.tv/u/ImpendingMoon" target="_blank">
-                            Watch videos on my Vanillo channel!
-                        </a>
-                        (yowzers)
-                    </li>
-                </ul>
-            </section>
+      <section class="box">
+        <h2>Where do you want to go today?</h2>
+        <div class="two-column">
+          <ul>
+            <li><a href="/projects">Check out my projects</a></li>
+            <li><a href="/computers">Read about my computers</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://www.twitch.tv/impendingmoon">Watch me on Twitch</a></li>
+            <li><a href="https://bsky.app/profile/impendingmoon.bsky.social">Find me on Bluesky</a></li>
+          </ul>
         </div>
+      </section>
+
+      <section class="box">
+        <h2>Recent Updates</h2>
+        <ul id="recentUpdates">
+          <li>2026-1-19: Updated the homepage</li>
+        </ul>
+        <h2>Currently Working On</h2>
+        <ul>
+          <li>
+            <a href="/projects/im8000">IM8000</a>
+            <ul>
+              <li>Fixing up the emulator</li>
+              <li>Writing an assembler (somehow the hardest task of my life)</li>
+              <li>Cleaning up documentation</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
     </main>
 
-    <%- include("partials/_aside.ejs") -%>
     <%- include("partials/_footer.ejs") -%>
-</div>
+  </div>
 
 </body>
+
 </html>
