@@ -1,49 +1,49 @@
 <noscript>
-  <h2 id="NS_PetName" class="pet-name">Rocky</h2>
-  <img id="NS_PetImage" class="pet-image" src="/images/rocky.webp" alt="A pet rock">
+	<h2 id="NS_PetName" class="pet-name">Rocky</h2>
+	<img id="NS_PetImage" class="pet-image" src="/images/rocky.webp" alt="A pet rock">
 
-  <div class="pet-status-container">
-    <label for="NS_PetEnergy"><strong>Happiness: </strong></label>
-    <meter id="NS_PetHappiness" class="pet-meter" min="0" max="100" value="100">100</meter>
+	<div class="pet-status-container">
+		<label for="NS_PetEnergy"><strong>Happiness: </strong></label>
+		<meter id="NS_PetHappiness" class="pet-meter" min="0" max="100" value="100">100</meter>
 
-    <label for="NS_PetEnergy"><strong>Food: </strong></label>
-    <meter id="NS_PetFood" class="pet-meter" min="0" max="100" value="100">100</meter>
+		<label for="NS_PetEnergy"><strong>Food: </strong></label>
+		<meter id="NS_PetFood" class="pet-meter" min="0" max="100" value="100">100</meter>
 
-    <label for="NS_PetEnergy"><strong>Energy: </strong></label>
-    <meter id="NS_PetEnergy" class="pet-meter" min="0" max="100" value="100">100</meter>
-  </div>
+		<label for="NS_PetEnergy"><strong>Energy: </strong></label>
+		<meter id="NS_PetEnergy" class="pet-meter" min="0" max="100" value="100">100</meter>
+	</div>
 
-  <div class="pet-controls-container">
-    <button class="pet-button" disabled>Feed</button>
-    <button class="pet-button" disabled>Play</button>
-    <button class="pet-button" disabled>Speak</button>
-  </div>
+	<div class="pet-controls-container">
+		<button class="pet-button" disabled>Feed</button>
+		<button class="pet-button" disabled>Play</button>
+		<button class="pet-button" disabled>Speak</button>
+	</div>
 
-  <p class="pet-text-box">Rocky is content.</p>
+	<p class="pet-text-box">Rocky is content.</p>
 </noscript>
 
 <div id="petJSContainer" hidden aria-hidden="true">
-  <h2 id="petName" class="pet-name"></h2>
-  <img id="petImage" class="pet-image" src="" alt="">
+	<h2 id="petName" class="pet-name"></h2>
+	<img id="petImage" class="pet-image" src="" alt="">
 
-  <div class="pet-status-container">
-    <label for="petHappiness"><strong>Happiness: </strong></label>
-    <meter id="petHappiness" class="pet-meter" min="0" max="100" value="0">0</meter>
+	<div class="pet-status-container">
+		<label for="petHappiness"><strong>Happiness: </strong></label>
+		<meter id="petHappiness" class="pet-meter" min="0" max="100" value="0">0</meter>
 
-    <label for="petFood"><strong>Food: </strong></label>
-    <meter id="petFood" class="pet-meter" min="0" max="100" value="0">0</meter>
+		<label for="petFood"><strong>Food: </strong></label>
+		<meter id="petFood" class="pet-meter" min="0" max="100" value="0">0</meter>
 
-    <label for="petEnergy"><strong>Energy: </strong></label>
-    <meter id="petEnergy" class="pet-meter" min="0" max="100" value="0">0</meter>
-  </div>
+		<label for="petEnergy"><strong>Energy: </strong></label>
+		<meter id="petEnergy" class="pet-meter" min="0" max="100" value="0">0</meter>
+	</div>
 
-  <div class="pet-controls-container">
-    <button id="petFeedButton" class="pet-button" disabled>Feed</button>
-    <button id="petPlayButton" class="pet-button" disabled>Play</button>
-    <button id="petSpeakButton" class="pet-button" disabled>Speak</button>
-  </div>
+	<div class="pet-controls-container">
+		<button id="petFeedButton" class="pet-button" disabled>Feed</button>
+		<button id="petPlayButton" class="pet-button" disabled>Play</button>
+		<button id="petSpeakButton" class="pet-button" disabled>Speak</button>
+	</div>
 
-  <p id="petTextBox" class="pet-text-box"></p>
+	<p id="petTextBox" class="pet-text-box"></p>
 </div>
 
 <script type="module" src="/js/moonpet.js"></script>

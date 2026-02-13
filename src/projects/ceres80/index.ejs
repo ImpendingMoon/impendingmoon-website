@@ -2,121 +2,130 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <%- include("../../partials/_stylesheets.ejs") -%>
-  <title>Ceres80 | ImpendingMoon</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<%- include("../../partials/_stylesheets.ejs") -%>
+	<title>Ceres80 | ImpendingMoon</title>
 </head>
 
 <body>
-  <div id="page">
-    <%- include("../../partials/_header.ejs", {currentPage: "projects"}) -%>
-    <main>
-      <div class="box">
-        <section>
-          <h1>Ceres80</h1>
-          <img class="img-medium border float-left" src="/images/ceres80/ceres80.webp" alt="A photo of the Ceres80 computer">
-          <p>
-            The Ceres80 is an 8-bit computer inspired by
-            <a href="https://youtube.com/playlist?list=PLowKtXNTBypFbtuVMUVXNR0z1mu7dp7eH" target="_blank">Ben Eater's 6502 computer.</a>
-          </p>
-          <p>
-            It's built around the Z80 microprocessor, with a console-like design.
-          </p>
-          <p>
-            I have not created schematics or very good documentation for the system, because I don't expect
-            anyone to actually build it, especially since the Z80 line of components was discontinued in June
-            2024 <em>(womp womp)</em>.
-          </p>
-          <p>
-            This project is currently on haitus. I wore out the section of the breadboard where the ROM sits,
-            and I don't feel like rebuilding it at the moment.
-          </p>
-        </section>
+	<div id="page">
+		<%- include("../../partials/_header.ejs", {currentPage: "projects"}) -%>
+		<main>
+			<div class="box">
+				<section>
+					<h1>Ceres80</h1>
+					<img class="img-medium border float-left" src="/images/ceres80/ceres80.webp"
+						alt="A photo of the Ceres80 computer">
+					<p>
+						The Ceres80 is an 8-bit computer inspired by
+						<a href="https://youtube.com/playlist?list=PLowKtXNTBypFbtuVMUVXNR0z1mu7dp7eH"
+							target="_blank">Ben Eater's 6502 computer.</a>
+					</p>
+					<p>
+						It's built around the Z80 microprocessor, with a console-like design.
+					</p>
+					<p>
+						I have not created schematics or very good documentation for the system, because I don't expect
+						anyone to actually build it, especially since the Z80 line of components was discontinued in
+						June
+						2024 <em>(womp womp)</em>.
+					</p>
+					<p>
+						This project is currently on haitus. I wore out the section of the breadboard where the ROM
+						sits,
+						and I don't feel like rebuilding it at the moment.
+					</p>
+				</section>
 
-        <section>
-          <h2>Specs</h2>
-          <ul>
-            <li>CPU: Z80 @ 6.144 MHz</li>
-            <li>
-              Memory:
-              <ul>
-                <li>32 KiB Firmware ROM</li>
-                <li>32 KiB RAM</li>
-              </ul>
-            </li>
-            <li>Display: 128x64 Monochrome LCD</li>
-            <li>Input: NES-Style 8-Button Controls</li>
-            <li>Storage: SD Card Interface</li>
-            <li>Timing: 100 Hz Interrupt Timer</li>
-            <li>Motherboard: 3 BB830 Breadboards</li>
-          </ul>
-        </section>
+				<section>
+					<h2>Specs</h2>
+					<ul>
+						<li>CPU: Z80 @ 6.144 MHz</li>
+						<li>
+							Memory:
+							<ul>
+								<li>32 KiB Firmware ROM</li>
+								<li>32 KiB RAM</li>
+							</ul>
+						</li>
+						<li>Display: 128x64 Monochrome LCD</li>
+						<li>Input: NES-Style 8-Button Controls</li>
+						<li>Storage: SD Card Interface</li>
+						<li>Timing: 100 Hz Interrupt Timer</li>
+						<li>Motherboard: 3 BB830 Breadboards</li>
+					</ul>
+				</section>
 
-        <section>
-          <h2>Future Plans</h2>
-          <ol>
-            <li>Create schematics for the computer</li>
-            <li>
-              Finish writing the emulator
-              <ul>
-                <li>Probably move it off of WinForms to something cross-platform</li>
-              </ul>
-            </li>
-            <li>
-              Finish writing the operating system
-              <ul>
-                <li>Still debating whether to write it in C or assembly</li>
-                <li>On one hand, C code generation on the Z80 isn't great</li>
-                <li>On the other hand, I suck at programming in assembly</li>
-              </ul>
-            </li>
-            <li>Write some user applications</li>
-          </ol>
-        </section>
+				<section>
+					<h2>Future Plans</h2>
+					<ol>
+						<li>Create schematics for the computer</li>
+						<li>
+							Finish writing the emulator
+							<ul>
+								<li>Probably move it off of WinForms to something cross-platform</li>
+							</ul>
+						</li>
+						<li>
+							Finish writing the operating system
+							<ul>
+								<li>Still debating whether to write it in C or assembly</li>
+								<li>On one hand, C code generation on the Z80 isn't great</li>
+								<li>On the other hand, I suck at programming in assembly</li>
+							</ul>
+						</li>
+						<li>Write some user applications</li>
+					</ol>
+				</section>
 
-        <section>
-          <h2>Repositories</h2>
-          <p>
-            Documentation, code, and eventually schematics can be found at:
-            <a href="https://github.com/ImpendingMoon/Ceres80" target="_blank">https://github.com/ImpendingMoon/Ceres80</a>
-            <br>
-            Ceres80Emu can be found at:
-            <a href="https://github.com/ImpendingMoon/Ceres80Emu" target="_blank">https://github.com/ImpendingMoon/Ceres80Emu</a>
-          </p>
-        </section>
-      </div>
-      <div class="box">
-        <section>
-          <h2>The Display</h2>
-          <p>
-            The display has been a relative nightmare to work with. Mostly to do with the pixel format and
-            inconsistent behavior.
-          </p>
-          <ul>
-            <li>The display is split into two halves horizontally, each individually addressed</li>
-            <li>Each half has the Y-axis going left-to-right, and the X-axis going top-to-bottom</li>
-            <li>Pixels are packed in columns, and the least significant bit is the topmost pixel</li>
-            <li>There is no orientation in which this is a standard coordinate space</li>
-            <li>The Y and Z registers sometimes just change ¯\_(ツ)_/¯</li>
-          </ul>
-          <figure>
-            <img class="img-medium" src="/images/ceres80/ceres80-testwonky.webp" alt="A photo of the Ceres80 with a messed up test image">
-            <figcaption>
-              A test image with the Y and Z registers not reset while drawing.
-            </figcaption>
-          </figure>
-          <figure>
-            <img class="img-medium" src="/images/ceres80/ceres80-test.webp" alt="A photo of the Ceres80 with the expected test image">
-            <figcaption>A test image with the Y and Z registers reset before drawing each row.</figcaption>
-          </figure>
-        </section>
-      </div>
-    </main>
-    <%- include("../../partials/_aside.ejs") -%>
-    <%- include("../../partials/_footer.ejs") -%>
-  </div>
+				<section>
+					<h2>Repositories</h2>
+					<p>
+						Documentation, code, and eventually schematics can be found at:
+						<a href="https://github.com/ImpendingMoon/Ceres80"
+							target="_blank">https://github.com/ImpendingMoon/Ceres80</a>
+						<br>
+						Ceres80Emu can be found at:
+						<a href="https://github.com/ImpendingMoon/Ceres80Emu"
+							target="_blank">https://github.com/ImpendingMoon/Ceres80Emu</a>
+					</p>
+				</section>
+			</div>
+			<div class="box">
+				<section>
+					<h2>The Display</h2>
+					<p>
+						The display has been a relative nightmare to work with. Mostly to do with the pixel format and
+						inconsistent behavior.
+					</p>
+					<ul>
+						<li>The display is split into two halves horizontally, each individually addressed</li>
+						<li>Each half has the Y-axis going left-to-right, and the X-axis going top-to-bottom</li>
+						<li>Pixels are packed in columns, and the least significant bit is the topmost pixel</li>
+						<li>There is no orientation in which this is a standard coordinate space</li>
+						<li>The Y and Z registers sometimes just change ¯\_(ツ)_/¯</li>
+					</ul>
+					<figure>
+						<img class="img-medium" src="/images/ceres80/ceres80-testwonky.webp"
+							alt="A photo of the Ceres80 with a messed up test image">
+						<figcaption>
+							A test image with the Y and Z registers not reset while drawing.
+						</figcaption>
+					</figure>
+					<figure>
+						<img class="img-medium" src="/images/ceres80/ceres80-test.webp"
+							alt="A photo of the Ceres80 with the expected test image">
+						<figcaption>A test image with the Y and Z registers reset before drawing each row.</figcaption>
+					</figure>
+				</section>
+			</div>
+		</main>
+		<%- include("../../partials/_aside.ejs") -%>
+		<%- include("../../partials/_footer.ejs") -%>
+	</div>
 </body>
 
 </html>

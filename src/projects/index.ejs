@@ -1,39 +1,42 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <%- include("../partials/_stylesheets.ejs") -%>
-    <title>Projects | ImpendingMoon</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<%- include("../partials/_stylesheets.ejs") -%>
+	<title>Projects | ImpendingMoon</title>
 </head>
+
 <body>
-<div id="page">
-    <%- include("../partials/_header.ejs", {currentPage: "projects"}) -%>
-    <main>
-        <div class="box">
-            <section>
-                <h1>Current Projects</h1>
-                <p>All the cool-ish stuff I'm working on.</p>
-            </section>
+	<div id="page">
+		<%- include("../partials/_header.ejs", {currentPage: "projects"}) -%>
+		<main>
+			<div class="box">
+				<section>
+					<h1>Current Projects</h1>
+					<p>All the cool-ish stuff I'm working on.</p>
+				</section>
 
-            <section>
-                <h2><a href="/projects/ceres80">Ceres80</a></h2>
-                <p>An 8-bit homebrew computer using the Z80. Currently on hiatus.</p>
-            </section>
+				<section>
+					<h2><a href="/projects/ceres80">Ceres80</a></h2>
+					<p>An 8-bit homebrew computer using the Z80. Currently on hiatus.</p>
+				</section>
 
-            <section>
-                <h2><a href="/projects/im8000">IM8000</a></h2>
-                <p>
-                    A homebrew instruction set architecture designed to be an alternate-history successor to the
-                    Zilog Z80.
-                </p>
-            </section>
-        </div>
-    </main>
-    <%- include("../partials/_aside.ejs") -%>
-    <%- include("../partials/_footer.ejs") -%>
-</div>
+				<section>
+					<h2><a href="/projects/im8000">IM8000</a></h2>
+					<p>
+						A homebrew instruction set architecture designed to be an alternate-history successor to the
+						Zilog Z80.
+					</p>
+				</section>
+			</div>
+		</main>
+		<%- include("../partials/_aside.ejs") -%>
+		<%- include("../partials/_footer.ejs") -%>
+	</div>
 </body>
+
 </html>

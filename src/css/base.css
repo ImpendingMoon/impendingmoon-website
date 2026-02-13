@@ -1,105 +1,105 @@
 :root {
-  --border-radius: 0.5rem;
-  --spacing: 0.75rem;
-  --black: #221133;
-  --white: #fffbf7;
-  --background-color: #fff5eb;
-  --border-color: #3a47a6;
-  --link-color: #553377;
-  --shadow-color: rgba(0, 0, 0, 0.5);
-  --brighten-value: 200%;
-  --darken-value: 75%;
-  --border-image: url("/images/border.webp") 30 / 16px / 8px repeat;
+	--border-radius: 0.5rem;
+	--spacing: 0.75rem;
+	--black: #221133;
+	--white: #fffbf7;
+	--background-color: #fff5eb;
+	--border-color: #3a47a6;
+	--link-color: #553377;
+	--shadow-color: rgba(0, 0, 0, 0.5);
+	--brighten-value: 200%;
+	--darken-value: 75%;
+	--border-image: url('/images/border.webp') 30 / 16px / 8px repeat;
 }
 
 html {
-  color: var(--black);
-  font-size: 1.25em;
-  line-height: 1.4;
-  font-family: "Roboto", sans-serif;
-  background-color: #1a112c;
-  background-image: url("/images/background-top.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-top: 5%;
+	color: var(--black);
+	font-size: 1.25em;
+	line-height: 1.4;
+	font-family: 'Roboto', sans-serif;
+	background-color: #1a112c;
+	background-image: url('/images/background-top.webp');
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: 5%;
 }
 
 body {
-  padding: 0;
-  margin: 0 var(--spacing);
+	padding: 0;
+	margin: 0 var(--spacing);
 }
 
 h1,
 h2,
 h3 {
-  font-weight: bold;
-  margin: 0;
+	font-weight: bold;
+	margin: 0;
 }
 
 h1 {
-  font-size: 2em;
+	font-size: 2em;
 }
 
 h2 {
-  font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 h3 {
-  font-style: italic;
+	font-style: italic;
 }
 
 p {
-  margin: 0 0 var(--spacing);
+	margin: 0 0 var(--spacing);
 }
 
 a {
-  text-decoration: none;
-  color: var(--link-color);
-  overflow-wrap: break-word;
+	text-decoration: none;
+	color: var(--link-color);
+	overflow-wrap: break-word;
 }
 
 a:hover {
-  filter: brightness(var(--brighten-value));
+	filter: brightness(var(--brighten-value));
 }
 
 ul,
 ol {
-  margin: 0;
+	margin: 0;
 }
 
 button {
-  cursor: pointer;
-  font-family: sans-serif;
-  font-size: 0.75em;
+	cursor: pointer;
+	font-family: sans-serif;
+	font-size: 0.75em;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  box-sizing: border-box;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
 }
 
 section {
-  display: flow-root;
+	display: flow-root;
 }
 
 section + section {
-  margin-top: var(--spacing);
+	margin-top: var(--spacing);
 }
 
 figure {
-  display: inline-block;
-  padding: var(--spacing);
-  margin: var(--spacing);
-  background: var(--black);
-  color: var(--white);
-  border-image: var(--border-image);
-  max-width: max-content;
+	display: inline-block;
+	padding: var(--spacing);
+	margin: var(--spacing);
+	background: var(--black);
+	color: var(--white);
+	border-image: var(--border-image);
+	max-width: max-content;
 }
 
 figcaption {
-  text-align: center;
-  word-wrap: break-word;
-  max-width: 384px;
+	text-align: center;
+	word-wrap: break-word;
+	max-width: 384px;
 }

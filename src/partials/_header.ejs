@@ -1,44 +1,44 @@
 <header>
-    <h1><a href="/" class="logo">ImpendingMoon</a></h1>
+	<h1><a href="/" class="logo">ImpendingMoon</a></h1>
 
-    <button id="nav-toggle" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" hidden>☰
-    </button>
+	<button id="nav-toggle" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" hidden>☰
+	</button>
 
-    <div id="nav-box" class="box open" style="overflow: visible;">
-        <nav class="navbar">
-            <ul id="nav-links" role="menubar">
-                <li class="navbar-item" role="none">
-                    <a href="/" role="menuitem" <%- currentPage === "home" ? 'aria-current="true"' : "" -%>>
-                        Home
-                    </a>
-                </li>
-                <li class="navbar-item" role="none">
-                    <a href="/about" role="menuitem" <%- currentPage === "about" ? 'aria-current="true"' : "" -%>>
-                        About
-                    </a>
-                </li>
-                <li class="navbar-item" role="none">
-                    <a href="/computers"
-                       role="menuitem" <%- currentPage === "computers" ? 'aria-current="true"' : "" -%>>
-                        Computers
-                    </a>
-                </li>
-                <li class="navbar-item" role="none">
-                    <a href="/projects" role="menuitem" <%- currentPage === "projects" ? 'aria-current="true"' : "" -%>>
-                        Projects
-                    </a>
-                    <ul>
-                        <li class="navbar-item" role="none">
-                            <a href="/projects/ceres80" role="menuitem">Ceres80</a>
-                        </li>
-                        <li class="navbar-item" role="none">
-                            <a href="/projects/im8000" role="menuitem">IM8000</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
+	<div id="nav-box" class="box open" style="overflow: visible;">
+		<nav class="navbar">
+			<ul id="nav-links" role="menubar">
+				<li class="navbar-item" role="none">
+					<a href="/" role="menuitem" <%- currentPage === "home" ? 'aria-current="true"' : "" -%>>
+						Home
+					</a>
+				</li>
+				<li class="navbar-item" role="none">
+					<a href="/about" role="menuitem" <%- currentPage === "about" ? 'aria-current="true"' : "" -%>>
+						About
+					</a>
+				</li>
+				<li class="navbar-item" role="none">
+					<a href="/computers" role="menuitem"
+						<%- currentPage === "computers" ? 'aria-current="true"' : "" -%>>
+						Computers
+					</a>
+				</li>
+				<li class="navbar-item" role="none">
+					<a href="/projects" role="menuitem" <%- currentPage === "projects" ? 'aria-current="true"' : "" -%>>
+						Projects
+					</a>
+					<ul>
+						<li class="navbar-item" role="none">
+							<a href="/projects/ceres80" role="menuitem">Ceres80</a>
+						</li>
+						<li class="navbar-item" role="none">
+							<a href="/projects/im8000" role="menuitem">IM8000</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
 </header>
 
 <script type="module" src="/js/navbar.js"></script>
