@@ -36,3 +36,7 @@
 .two-column {
 	column-count: 2;
 }
+
+.no-margin-bottom {
+	margin-bottom: 0;
+}
